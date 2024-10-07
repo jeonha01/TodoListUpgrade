@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>달력</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body style="background-color:cornsilk ">
+    <section class="container">
+        <section class="main">
+            <h1 class="main-title">SCHEDULE CALENDAR</h1>
+            <div class="month">
+                <button class="left"><i class="fa fa-chevron-left"></i></button>
+                <p class="month-name"></p>
+                <button class="right"><i class="fa fa-chevron-right"></i></button>
+            </div>
+            <div>
+                <div class="dayCount">
+                    <ul class="dayCount-list ">
+                        <li>월</li>
+                        <li>화</li>
+                        <li>수</li>
+                        <li>목</li>
+                        <li>금</li>
+                        <li>토</li>
+                        <li>일</li>
+                    </ul>
+                </div>
+                <ul class="day" id="dayCount"></ul>
+            </div>
+        </section>
+        <section class="sectionList">
+            <h1 id="title">To do list</h1>
+            <div class="dayListAll" id="dayList"></div>
+            <div class="textToDo" id="textToDo">
+                <input type="text" id="iop">
+                <button id="add-button" class="addB" onclick="addList()">추가</button>
+            </div>
+            <div class="listToDo" id="listToDo"></div>
+        </section>
+        <section class="AllList">
+            <h1 id="title">All list</h1>
+            <div class="all-list" id="listAll"></div>
+        </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

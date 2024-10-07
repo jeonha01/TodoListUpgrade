@@ -1,0 +1,181 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background: rgb(245, 241, 241);
+}
+
+/*캘린더 섹션*/
+.main {
+    background-color: #FFE5C2;
+    width: 698px;
+
+    padding: 20px 0px 20px 25px;
+    border-radius: 15px;
+
+}
+
+.main .main-title {
+    padding: 20px;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 8px;
+}
+
+.main .day {
+    width: 100%;
+}
+
+.main .day li {
+    float: left;
+    background: white;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    margin-right: 14px;
+    margin-top: 10px;
+}
+
+
+.main .day li:hover {
+    cursor: pointer;
+    transition: all .2s;
+    transform: scale(1.5);
+}
+
+.month {
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    margin-left: -25px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.month .month-name {
+    font-size: 30px;
+}
+
+.dayCount .dayCount-list li {
+    float: left;
+    width: 94px;
+    color: black;
+}
+
+.none {
+    display: none;
+}
+
+/*투두 섹션*/
+.sectionList {
+    margin-left: 10px;
+    background-color: #FFE5C2;
+    width: 350px;
+    height: 700px;
+    border-radius: 15px;
+    
+}
+
+.dayList {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    flex: 1;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+#title {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.textToDo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+}
+
+.textToDo input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+}
+
+.textToDo button {
+    border-radius: 15px;
+    border: none;
+    width: 40px;
+
+}
+
+#add-button {
+    cursor: pointer;
+}
+.listToDo{
+    height: 550px;
+    overflow-y: auto;
+}
+.AllList {
+    margin-left: 10px;
+    background-color: #FFE5C2;
+    width: 400px;
+
+    height: 700px;
+    border-radius: 15px;
+    overflow-y: auto;
+}
+.ooo{
+    margin-top: 20px;
+    display: flex;
+    width: 310px;
+    height: 50px;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 15px;
+    
+}
+.ooo div, .ooo button{
+    margin-top: 10px;
+}
+#checkbutton {
+    border: none;
+    margin-top: 0px;
+    margin-left: 10px;
+    font-weight: bolder;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#inputrender {
+    margin-left: 15px;
+    font-size: 23px;
+    text-decoration: underline;
+}
